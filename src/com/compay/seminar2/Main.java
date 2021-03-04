@@ -28,6 +28,10 @@ public class Main {
 
         BankAccount account = new BankAccount("INGB123123123", new Person("Gigel"));
 
+        account.deposit(100);
+        account.withdraw(50);
+        account.withdraw(70);
+        System.out.println(account.getBalance());
 
 
     }
