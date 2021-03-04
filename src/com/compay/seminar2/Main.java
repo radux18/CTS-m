@@ -1,6 +1,8 @@
 package com.compay.seminar2;
 
 import com.compay.seminar2.solid.BankAccount;
+import com.compay.seminar2.solid.FeeBankAccount;
+import com.compay.seminar2.solid.InsuficientFundsException;
 import com.compay.seminar2.solid.Person;
 
 import java.math.BigDecimal;
@@ -29,10 +31,23 @@ public class Main {
         BankAccount account = new BankAccount("INGB123123123", new Person("Gigel"));
 
         account.deposit(100);
-        account.withdraw(50);
-        account.withdraw(70);
+        try {
+            account.withdraw(30);
+            account.withdraw(40);
+            account.withdraw(70);
+        } catch (InsuficientFundsException e) {
+            System.out.println(e.getMessage());
+        }
+
         System.out.println(account.getBalance());
 
-
+        FeeBankAccount fb = new FeeBankAccount("INGB1232131", new Person("Gigel"));
+        fb.deposit(500);
+        try {
+            fb.withdraw(100);
+        } catch (InsuficientFundsException e) {
+            e.printStackTrace();
+        }
+        System.out.println(fb.getBalance());
     }
 }
