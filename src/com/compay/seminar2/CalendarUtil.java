@@ -19,7 +19,7 @@ public class CalendarUtil {
         }else if (day == 7) {
             return "Saturday";
         }
-        throw new IncorrectDayException("Only 7 days allowed.");
+        throw new IncorrectDayException("Only 7 days in a week");
     }
 
     public String weekdDay2(int day) throws IncorrectDayException {
