@@ -1,9 +1,9 @@
 package com.compay.seminar2;
 
-
+import java.text.DateFormatSymbols;
 
 public class CalendarUtil {
-    public String weekdDay(int day){
+    public String weekdDay(int day) throws IncorrectDayException {
         if(day == 1){
             return "Sunday";
         } else if (day == 2){
@@ -19,10 +19,10 @@ public class CalendarUtil {
         }else if (day == 7) {
             return "Saturday";
         }
-        return null;
+        throw new IncorrectDayException("Only 7 days allowed.");
     }
 
-    public String weekdDay2(int day){
+    public String weekdDay2(int day) throws IncorrectDayException {
         switch (day){
             case 1 :
                 return "Sunday";
@@ -32,15 +32,34 @@ public class CalendarUtil {
                 return "Tuesday";
             case 4:
                 return "Wednesday";
-            case 5:
+                case 5:
+                return "Thursday";
+            case 6:
                 return "Friday";
-            case 6 :
+            case 7 :
                 return "Saturday";
             default:
-                return null;
+                throw new IncorrectDayException("Only 7 days in a week");
         }
     }
 
+    public String weekDay3(int day) throws IncorrectDayException {
+        if (day < 1 || day > 7){
+            throw new IncorrectDayException("Only 7 days in a week");
+        }
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"};
+        return days[day - 1];
+    }
+
+
+    public String weekDay4(int day) throws IncorrectDayException {
+        if (day < 1 || day > 7){
+            throw new IncorrectDayException("Only 7 days in a week");
+        }
+       String[] days =  new DateFormatSymbols().getWeekdays();
+
+        return days[day - 1];
+    }
 
 
 }
