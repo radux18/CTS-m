@@ -1,4 +1,4 @@
-package com.company;
+package com.compay.seminar2;
 
 public class CalendarUtil {
     public String weekdDay(int day){
