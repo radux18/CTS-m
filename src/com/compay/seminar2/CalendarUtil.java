@@ -1,5 +1,7 @@
 package com.compay.seminar2;
 
+
+
 public class CalendarUtil {
     public String weekdDay(int day){
         if(day == 1){
@@ -37,7 +39,8 @@ public class CalendarUtil {
             default:
                 return null;
         }
-
     }
+
+
 
 }
