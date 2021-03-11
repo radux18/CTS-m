@@ -1,7 +1,5 @@
 package seminar3;
 
-
-
 public class FeeBankAccount extends BankAccount {
 
     private long fee = 2;

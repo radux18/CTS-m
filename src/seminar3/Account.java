@@ -1,4 +1,4 @@
-package com.compay.seminar2.solid;
+package seminar3;
 
 public interface Account {
     void withdraw(long amount) throws InsuficientFundsException;

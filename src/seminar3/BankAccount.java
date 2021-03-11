@@ -1,6 +1,6 @@
 package seminar3;
 
-public class BankAccount {
+public class BankAccount implements Account {
 
     private String iBan;
     private long balance;
@@ -13,6 +13,7 @@ public class BankAccount {
         this.balance = 0;
     }
 
+    @Override
     public void withdraw(long amount) throws InsuficientFundsException {
         if (amount > balance)
             throw  new InsuficientFundsException("Insuficient funds " + balance);
@@ -20,6 +21,7 @@ public class BankAccount {
         balance -= amount;
     }
 
+    @Override
     public void deposit(long amount){
         System.out.println("Adding " + amount + " to " + iBan);
         balance += amount;
