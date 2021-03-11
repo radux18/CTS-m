@@ -1,53 +1,40 @@
 package com.compay.seminar2;
 
-import com.compay.seminar2.solid.BankAccount;
-import com.compay.seminar2.solid.FeeBankAccount;
-import com.compay.seminar2.solid.InsuficientFundsException;
-import com.compay.seminar2.solid.Person;
+import com.compay.seminar2.solid.*;
 
-import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
-    public static void main(String[] args)  {
-//        CalendarUtil cu = new CalendarUtil();
-//
-//        double d1 = 1.02;
-//        double d2 = 0.43;
-//
-//        BigDecimal bg1 = new BigDecimal("1.02");
-//        BigDecimal bg2= new BigDecimal("0.43");
-//        System.out.println(bg1.subtract(bg2));
-//
-//        System.out.println(d1 - d2);
-//
-//        try {
-//            System.out.println(cu.weekdDay(2));
-//            System.out.println(cu.weekdDay2(3));
-//            System.out.println(cu.weekDay3(3));
-//        } catch (IncorrectDayException e) {
-//            e.printStackTrace();
-//        }
+    public static void main(String[] args) {
 
-        BankAccount account = new BankAccount("INGB123123123", new Person("Gigel"));
+        Map<Person, Account> employees = new HashMap<>();
 
-        account.deposit(100);
-        try {
-            account.withdraw(30);
-            account.withdraw(40);
-            account.withdraw(70);
-        } catch (InsuficientFundsException e) {
-            System.out.println(e.getMessage());
+        Person p1 = new Person("Chuck Norris");
+        Account b1 = new BankAccount("RFZ1223122", p1);
+
+        Person p2 = new Person("Arnold");
+        Account b2 = new FeeBankAccount("INGB123213", p2);
+
+        Person p3 = new Person("Van Damme");
+        Account b3 = new BankAccount("INGB3331123", p3);
+
+        employees.put(p1, b1);
+        employees.put(p2, b2);
+        employees.put(p3, b3);
+
+        for (Account a : employees.values()) {
+            a.deposit(1000);
         }
 
-        System.out.println(account.getBalance());
+        for (Account a : employees.values()) {
+            try {
+                a.withdraw(10);
+            }catch (InsuficientFundsException ex){
+                System.out.println(ex.getMessage());
+            }
 
-        FeeBankAccount fb = new FeeBankAccount("INGB1232131", new Person("Gigel"));
-        fb.deposit(500);
-        try {
-            fb.withdraw(100);
-        } catch (InsuficientFundsException e) {
-            e.printStackTrace();
         }
-        System.out.println(fb.getBalance());
+
     }
 }
