@@ -1,11 +1,11 @@
 package seminar3;
 
-public class FeeBankAccount extends BankAccount implements Receivable, Payable{
+public class FeeBankAccount extends DebitBankAccount implements Receivable, Payable{
 
     private long fee = 2;
 
-    public FeeBankAccount(String iBan, Person person) {
-        super(iBan, person);
+    public FeeBankAccount(NotificationService ns, String iBan, Person person) {
+        super(ns, iBan, person);
     }
 
     @Override
@@ -14,4 +14,8 @@ public class FeeBankAccount extends BankAccount implements Receivable, Payable{
         super.withdraw(amount + fee);
     }
 
+    @Override
+    public void deposit(long amount) {
+
+    }
 }

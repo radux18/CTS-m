@@ -1,8 +1,9 @@
 package seminar3;
 
-public class DebitBankAccount extends BankAccount  implements Payable, Receivable {
+public class DebitBankAccount extends BankAccount  implements Payable, Receivable, Transferable {
 
-    public DebitBankAccount(String iban, Person person) {
+    public DebitBankAccount(NotificationService ns,String iban, Person person) {
+        super(ns);
         this.iban = iban;
         this.accountHolder = person;
         this.balance = 0;
@@ -10,16 +11,22 @@ public class DebitBankAccount extends BankAccount  implements Payable, Receivabl
 
     @Override
     public void withdraw(long amount) throws InsuficientFundsException {
-        if(amount > balance){
+        if(amount > balance)
             throw new InsuficientFundsException("Insufficient Funds");
-        }
-        System.out.println("Withdrawing " + amount + " from " + iban);
+
+        notificationService.sendNotification(accountHolder, "withdrawing " + amount + "to " + iban);
         balance -= amount;
     }
 
     @Override
+    public void transfer(Receivable destination, long amount) throws InsuficientFundsException {
+        this.withdraw(amount);
+        destination.deposit(amount);
+    }
+
+    @Override
     public void deposit(long amount){
-        System.out.println("Adding " + amount + " to " + iban);
+        notificationService.sendNotification(accountHolder,"Adding " + amount + "to " + iban );
         balance += amount;
     }
 
@@ -46,4 +53,6 @@ public class DebitBankAccount extends BankAccount  implements Payable, Receivabl
     public void setAccountHolder(Person accountHolder) {
         this.accountHolder = accountHolder;
     }
+
+
 }
