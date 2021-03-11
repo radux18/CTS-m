@@ -1,6 +1,6 @@
 package seminar3;
 
-public class FeeBankAccount extends BankAccount {
+public class FeeBankAccount extends BankAccount implements Receivable, Payable{
 
     private long fee = 2;
 
