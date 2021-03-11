@@ -27,7 +27,7 @@ public class Main {
         }
 
         Map<Person, Payable> union = new HashMap<>();
-        union.put(p2, b2);
+        union.put(p2, (Payable) b2);
         union.put(p3, b3);
 
         for (Payable a : union.values()) {
