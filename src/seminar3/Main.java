@@ -13,10 +13,10 @@ public class Main {
         CreditBankAccount b1 = new CreditBankAccount("RFZ123123132", p1,-1000);
 
         Person p2 = new Person("Arnold");
-        FeeBankAccount b2 = new FeeBankAccount("INGB12312313",p2);
+        FeeBankAccount b2 = new FeeBankAccount("INGB12312313", p2);
 
         Person p3 = new Person("Van Damme");
-        DebitBankAccount b3  = new DebitBankAccount("BT123123123",p3);
+        DebitBankAccount b3  = new DebitBankAccount("BT123123123", p3);
 
         employees.put(p1,b1);
         employees.put(p2,b2);
