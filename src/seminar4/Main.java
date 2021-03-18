@@ -28,10 +28,15 @@ public class Main {
         b.deposit(50);
         System.out.println(b.toString());
 
-        Elvis elvis = Elvis.theTrueElvis;
-        System.out.println("\n\n");
+        //singleton
+        Elvis elvis = Elvis.getInstance();
         elvis.sing();
 
+        Elvis elvis2 = Elvis.getInstance();
+        System.out.println(elvis == elvis2);
+
+        ElvisV2 elvisV2 = ElvisV2.INSTANCE;
+        elvisV2.sing();
 
 
 
