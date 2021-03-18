@@ -1,8 +1,8 @@
 package seminar4;
 
 import seminar4.banking.*;
+import seminar4.factory.Bank;
 import seminar4.singleton.Elvis;
-
 import java.math.BigInteger;
 import java.util.Random;
 
@@ -14,7 +14,6 @@ public class Main {
         Person p3 = new Person("Van Damme");
         p3.setEmail("van@damme.com");
         p3.setMobile("+405896563");
-
 
         CreditBankAccount b = CreditBankAccount.createCreditBankAccount(emailService, "INGB324234", p3, 100);
 
@@ -37,6 +36,35 @@ public class Main {
 
         ElvisV2 elvisV2 = ElvisV2.INSTANCE;
         elvisV2.sing();
+
+        Bank bank = Bank.getInstance();
+
+        Person adult = new Person("Van Damme");
+        adult.setEmail("van@damme.com");
+        adult.setMobile("+405896563");
+        adult.setAge(30);
+        adult.setNotificationType(Person.NotificationType.EMAIL);
+
+        Person child = new Person("Van Damme Junior");
+        child.setEmail("van@damme.com");
+        child.setMobile("+405896563");
+        child.setAge(14);
+
+        DebitBankAccount debit1 = bank.openDebitAccount(adult);
+
+        DebitBankAccount debit2 = bank.openDebitAccount(child);
+
+        debit1.deposit(20);
+        debit1.deposit(15);
+        try {
+            debit1.withdraw(15);
+            debit2.withdraw(3);
+        } catch (InsuficientFundsException e){
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(debit1);
+        System.out.println(debit2);
 
 
 

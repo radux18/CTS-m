@@ -1,11 +1,13 @@
 package seminar4.banking;
 
+
 import java.util.Date;
 
 public class Person {
     private String name;
     private String address;
     private Date birthDate;
+    private Integer age;
     private long salary;
     private String email;
     private String mobile;
@@ -15,6 +17,14 @@ public class Person {
     public static enum NotificationType {
         EMAIL,
         SMS
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getMobile() {
