@@ -49,6 +49,7 @@ public class Main {
         child.setEmail("van@damme.com");
         child.setMobile("+405896563");
         child.setAge(14);
+        child.setNotificationType(Person.NotificationType.SMS);
 
         DebitBankAccount debit1 = bank.openDebitAccount(adult);
 

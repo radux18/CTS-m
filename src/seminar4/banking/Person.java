@@ -15,8 +15,14 @@ public class Person {
     private  NotificationType notificationType;
 
     public static enum NotificationType {
-        EMAIL,
-        SMS
+        EMAIL {
+            @Override
+            public NotificationService getNotificationService(){
+                return new EmailNotificationService();
+            }
+        };
+
+                public abstract NotificationService getNotificationService();
     }
 
     public Integer getAge() {
