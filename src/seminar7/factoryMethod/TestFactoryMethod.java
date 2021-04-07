@@ -18,10 +18,10 @@ public class TestFactoryMethod {
         }
 
         SuperErouAbstract superCaracter =
-                FactorySuperErou.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
+                factoryCaractere.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
 
-        superCaracter = FactorySuperErou.getSuperErou(TipCaracter.MARVEL, "Spiderman");
-        superCaracter = FactorySuperErou.getSuperErou(TipCaracter.DC, "Batman");
+        superCaracter = factoryCaractere.getSuperErou(TipCaracter.MARVEL, "Spiderman");
+        superCaracter = factoryCaractere.getSuperErou(TipCaracter.DC, "Batman");
 
 
 
