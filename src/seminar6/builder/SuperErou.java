@@ -26,7 +26,7 @@ public class SuperErou {
     }
 
 
-    public static class SuperErouBuilder {
+    public static abstract class SuperErouBuilder {
        SuperErou superErou;
 
        public SuperErouBuilder(String nume, int puncteViata){
@@ -72,8 +72,7 @@ public class SuperErou {
        }
 
 
-
-
+        public abstract void seDeplaseaza();
     }
 
 
