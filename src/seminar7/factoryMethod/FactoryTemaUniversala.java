@@ -1,12 +1,12 @@
-package seminar7.simpleFactory;
+package seminar7.factoryMethod;
 
-public class FactorySuperErou {
-    //se ocupa cu gestionarea crearii obiectelor diferite
+import seminar7.simpleFactory.*;
 
-    //metoda globala care are ca referinta clasa de baza
-    public static SuperErouAbstract getSuperErou(TipCaracter tip, String nume){
+public class FactoryTemaUniversala extends FactoryAbstract{
+
+    @Override
+    public SuperErouAbstract getSuperErou(TipCaracter tip, String nume){
         SuperErouAbstract superErou = null;
-
         switch (tip){
             case DISNEY:
                 superErou = new CaracterDisney(nume, 100, false);

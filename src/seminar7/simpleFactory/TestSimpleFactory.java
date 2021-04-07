@@ -9,12 +9,25 @@ public class TestSimpleFactory {
 //        superErou = new CaracterMarvel("Spiderman", 150, 50);
 //        superErou = new CaracterDCComics("Batman", 150);
 
-        //varianta refactorizata
-        SuperErouAbstract superCaracter =
-                FactorySuperErou.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
+        boolean selectieTemaUniversala = true;
 
-        superCaracter = FactorySuperErou.getSuperErou(TipCaracter.MARVEL, "Spiderman");
-        superCaracter = FactorySuperErou.getSuperErou(TipCaracter.DC, "Batman");
+        SuperErouAbstract superCaracter = null;
+
+        if (selectieTemaUniversala){
+            //varianta refactorizata - simpleFactory
+             superCaracter =
+                    FactorySuperErou.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
+
+            superCaracter = FactorySuperErou.getSuperErou(TipCaracter.MARVEL, "Spiderman");
+            superCaracter = FactorySuperErou.getSuperErou(TipCaracter.DC, "Batman");
+
+            superCaracter.setPuncteViata(100);
+        } else {
+            //folosesti caractere din tema originala a jocului
+
+        }
+
+
 
 
     }
