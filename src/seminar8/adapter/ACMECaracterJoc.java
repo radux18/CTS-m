@@ -11,6 +11,14 @@ public abstract class ACMECaracterJoc {
         this.puncteViata = puncteViata;
     }
 
+    public String getNume() {
+        return nume;
+    }
+
+    public int getPuncteViata() {
+        return puncteViata;
+    }
+
     //abstracte pentru ca urmeaza sa le utilizam in clasele derivate
     public abstract void seDeplaseaza();
     public abstract void esteLovit(int puncte);
