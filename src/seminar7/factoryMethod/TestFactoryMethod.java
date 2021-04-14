@@ -1,6 +1,5 @@
 package seminar7.factoryMethod;
 
-import seminar7.simpleFactory.FactorySuperErou;
 import seminar7.simpleFactory.SuperErouAbstract;
 import seminar7.simpleFactory.TipCaracter;
 
@@ -22,9 +21,6 @@ public class TestFactoryMethod {
 
         superCaracter = factoryCaractere.getSuperErou(TipCaracter.MARVEL, "Spiderman");
         superCaracter = factoryCaractere.getSuperErou(TipCaracter.DC, "Batman");
-
-
-
 
     }
 }
