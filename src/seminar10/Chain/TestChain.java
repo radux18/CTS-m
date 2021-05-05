@@ -18,5 +18,6 @@ public class TestChain {
         serverChat.procesareMesajChat(new MesajChat("@Everyone", "Esti ok. Multumesc", 1));
         serverChat.procesareMesajChat(new MesajChat("@Gigel", "Hai sa incercam nivelul 5", 1));
 
+
     }
 }
