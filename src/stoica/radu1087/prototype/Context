@@ -1,0 +1,19 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Ne dorim sa implementam o solutie eficienta de a crea o serie de obiecte de access pentru aplicatie. Fiecare user care administreaza paginile
+detine 2 roluri, fie admin, fie manager(fiecare functie avand task-uri diferite).
+Prin urmare am mapat fiecarui user un anumit tip de rol de access, astfel am creat noi instante prin clonarea prototipului.
+Conceptul este folosit pentru a copia un obiect existent, mai degraba decat a crea o instanta noua de la zero, lucru care poate implica operatii costisitoare.
+Obiectul nou copiat poate modifica aceleași proprietăți numai dacă este necesar.
+Aceasta abordare economiseste resurse si timp costisitor, mai ales atunci cand crearea obiectelor este un proces greu.
+
+Avantaje:
+-poti clona obiecte fara a mai apela la clasele lor concrete;
+-se poate evita astfel de initializari repetate in favoarea clonarii prototipului;
+-se economiseste timp si resurse;
+
+Dezavantaje:
+-clonarea obiectelor complexe care au referinte circulare ar putea fi foarte dificila;
+-poate distrage programatorii de la o analiza corecta a proiectului; poate genera
+o ignorare a solutiilor mai bune, specificatii incomplete etc.

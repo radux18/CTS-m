@@ -10,18 +10,18 @@ public class ProxyLogin implements InterfataModulLogin {
     public static final int NR_MAX_INCERCARI = 3;
     public Map<String, Integer> nrIncercari = new HashMap<>();
 
+
     public ProxyLogin(InterfataModulLogin modulLogin) {
         this.modulLogin = modulLogin;
     }
 
     @Override
     public boolean login(String username, String password) {
-       //sa verif daca cnv incearca sa ghiceasca parola
+        //sa verif daca cnv incearca sa ghiceasca parola
         //verficam a cata incercare este
         //trb sa prevenim mai multe incercari prin blocare cont
         Integer nrIncercariNereusite = nrIncercari.get(username);
-        if (nrIncercariNereusite == null) {
-            //e prima data cand incearca sa se logheze
+        if (nrIncercariNereusite == null) {   //e prima data cand incearca sa se logheze
             nrIncercari.put(username, 0);
             nrIncercariNereusite = 0;
         }
@@ -43,7 +43,6 @@ public class ProxyLogin implements InterfataModulLogin {
             }
         } else
             throw new UnsupportedOperationException();
-
     }
 
     @Override

@@ -27,6 +27,7 @@ public class Main {
         b.deposit(50);
         System.out.println(b.toString());
 
+
         //singleton
         Elvis elvis = Elvis.getInstance();
         elvis.sing();
@@ -36,6 +37,8 @@ public class Main {
 
         ElvisV2 elvisV2 = ElvisV2.INSTANCE;
         elvisV2.sing();
+
+
 
         Bank bank = Bank.getInstance();
 

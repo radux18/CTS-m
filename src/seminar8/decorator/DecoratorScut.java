@@ -3,7 +3,6 @@ package seminar8.decorator;
 import seminar8.adapter.ACMECaracterJoc;
 
 public class DecoratorScut extends DecoratorCaracter {
-
     //adaugam in plus scut
     int nivelScut;
 
@@ -15,8 +14,9 @@ public class DecoratorScut extends DecoratorCaracter {
     @Override
     public void esteLovit(int puncte) {
         int puncteLovitura = puncte - this.nivelScut;
-        if (puncteLovitura > 0)
-            super.esteLovit(puncte);
+        if (puncteLovitura > 0){
+            this.caracterJoc.esteLovit(puncteLovitura);
+        }
     }
 
 

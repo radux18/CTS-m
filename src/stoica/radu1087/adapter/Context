@@ -1,0 +1,17 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Contextul actual prezinta 2 obiecte diferite, un produs de gaming si un produs deja in cosul de cumparaturi. Ne dorim ca produsul
+de gaming odata adaugat in cos, sa mosteneasca aceleasi proprietati si metode ca unui produs din cos. Astfel se apeleaza la o punte de legatura dintre cele 2
+prin folosirea unui adaptor prin care permite adaptarea interfetei la tipul obiectului dorit. Astfel se realizeaza adaugarea in lista de cumparaturi.
+
+Avantaje:
+-acest patern este relativ usor de inteles, include principiul Single Responsibility Principle.
+-include de asemenea Open/Closed Principle (poti adauga noi tipuri de adaptoare
+in program fara a intrerupe codul clientului existent, cat timp acestea functioneaza cu
+adaptoarele prin interfata clientului).
+
+Dezavantaje:
+-poate genera o complexitate mai mare a codului deoarece se introduc noi interfete si clase;
+
+

@@ -7,7 +7,6 @@ public abstract class DecoratorCaracter extends ACMECaracterJoc{
     ACMECaracterJoc caracterJoc = null;
 
     public DecoratorCaracter(ACMECaracterJoc caracterJoc) {
-        super(caracterJoc.getNume(), caracterJoc.getPuncteViata());
         this.caracterJoc = caracterJoc;
     }
 

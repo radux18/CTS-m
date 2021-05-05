@@ -22,6 +22,7 @@ public class TestSimpleFactory {
             superCaracter = FactorySuperErou.getSuperErou(TipCaracter.DC, "Batman");
 
             superCaracter.setPuncteViata(100);
+
         } else {
             //folosesti caractere din tema originala a jocului
 

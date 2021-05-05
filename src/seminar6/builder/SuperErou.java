@@ -1,14 +1,16 @@
 package seminar6.builder;
 
 public class SuperErou {
+
     private String nume;
     private int puncteViata;
+
     private boolean esteNegativ;
     private  boolean esteRanitGrav;
 
     private  InterfataArma armaDreapta;
-    private InterfataArma armaStanga;
-    private InterfataSuperPutere superPutere;
+    private  InterfataArma armaStanga;
+    private  InterfataSuperPutere superPutere;
     private  InterfataSuperPutere superSuperPutere;
 
      private SuperErou(){
@@ -26,7 +28,7 @@ public class SuperErou {
     }
 
 
-    public static abstract class SuperErouBuilder {
+    public static class SuperErouBuilder {
        SuperErou superErou;
 
        public SuperErouBuilder(String nume, int puncteViata){
@@ -72,7 +74,6 @@ public class SuperErou {
        }
 
 
-        public abstract void seDeplaseaza();
     }
 
 

@@ -12,26 +12,25 @@ public class TestBuilder {
       //  SuperErou superErou2 =
        //         new SuperErou("Batman", 100, false, false, new Arma(), null, null,null);
 
-//        SuperErou superman = new SuperErou
-//                .SuperErouBuilder("Superman",100)
-//                .setArmaDreapta(new Arma())
-//                .setArmaStanga(new Arma())
-//                .build();
-//
-//        SuperErou joker =
-//                new SuperErou.SuperErouBuilder("Joker",200)
-//                .esteNegativ()
-//                .esteRanit()
-//                .setArmaDreapta(new Arma())
-//                .build();
-//
-//        SuperErou joker2 =
-//                new SuperErou.SuperErouBuilder("Joker",200)
-//                .esteNegativ()
-//                .esteRanit()
-//                .setArmaDreapta(new Arma())
-//                .build();
+        SuperErou superman = new SuperErou
+                .SuperErouBuilder("Superman",100)
+                .setArmaDreapta(new Arma())
+                .setArmaStanga(new Arma())
+                .build();
 
+        SuperErou joker =
+                new SuperErou.SuperErouBuilder("Joker",200)
+                .esteNegativ()
+                .esteRanit()
+                .setArmaDreapta(new Arma())
+                .build();
+
+        SuperErou joker2 =
+                new SuperErou.SuperErouBuilder("Joker",200)
+                .esteNegativ()
+                .esteRanit()
+                .setArmaDreapta(new Arma())
+                .build();
 
 
 

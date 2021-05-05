@@ -1,0 +1,18 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+    Contextul actual prezinta conectarea la o baza de date prin care se furnizeaza ca parametrii de intrare email-ul si parola utilizatorului,
+cat si url-ul bazei de date. Prin urmare, urmarim sa creem o clasa de gestionare a conexiunii la baza de date, optimizand aceasta conexiune prin utilizarea unei
+singure instante de tip Singleton. Astfel, utilizatorul de tip admin, de fiecare data cand o sa apeleze aceasta clasa, el va accesa clasa prin metoda statica "getConexiuneDB",
+actionand ca un constructor.
+
+Avantaje:
+-Prin Singleton, fiind mai multe creational, un beneficiu este faptul ca este "resource friendly"; Nu se consuma inutil resurse de memorie pentru a crea un nou obiect
+mai ales atunci cand nu ai nevoie de altele noi.
+-Utilizare mai eficienta a memoriei;
+-Latenta scazuta.
+
+Dezavantaje:
+-Singleton incalca principiul "single responsibility principle": prin prisma faptului ca isi controleaza propria creatie si al ciclului de viata;
+-Testarea poate fi mai dificila(deoarece se introduce o stare globala intr-o aplicatie); Acest mod reduce potentialul de paralelism in cadrul unui program, deoarece pentru a accesa
+clasa Singleton intr-un "multi-threaded system", un obeict trebuie sa fie serializat(prin blocare).

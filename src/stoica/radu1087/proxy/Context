@@ -1,0 +1,15 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Aplicatia de fata presupune 2 tipuri de utilizatori care administreaza paginile(admin-nivel 1 si respectiv manager-nivel2).
+Fiindca fiecare are insusit cate o intrebuintare, ne dorim sa nu se intercaleze cele 2 roluri intre cei doi.
+Astfel developerul de nivel 1 are acces doar la adaugare/stergere de produse. iar cel de nivel 2 are acces
+la generare de rapoarte.
+
+Avantaje:
+-acest pattern este folosit pentru a limita accesul catre activitati ce pot fi securizate;
+-poti introduce noi proxi-uri fara a modifica serviciul;
+-
+Dezavantaje:
+-codul poate deveni mai complicat daca este nevoie sa introduci multe clase noi;
+-raspunsul de la server poate fi ingreunat;

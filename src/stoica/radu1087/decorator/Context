@@ -1,0 +1,18 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+In acest context, utilizatorul aplicatiei are posibilitatea de a interactiona in permanenta cu alti utilizatori(mesaje, recenzii).
+Datorita numeroaselor plangeri asupra comportamentului toxic pe care il au anumiti utilizatori, administratorul decide sa limiteze
+aceste actiuni prin blocarea interactiunilor.
+Asadar, daca inainte avertismentele nu aveau consecinta, dupa implementarea acestui mecanism, userii au voie sa primeasca cel mult 3
+avertismente din partea sistemului. In consecinta, interactiunea lor cu ceilalti va avea de suferit pe parcurs.
+
+Avantaje:
+-ofera o alternativa flexibila la extinderea functionalitatilor;
+-decoratorii permit modificarea comportamentului in timpul rularii;
+-decoratorii sunt o solutie buna pentru problemele de permutare;
+
+Dezavantaje:
+-decoratorii pot avea ca rezultate mai multe obiecte mici, iar utilizarea excesiva poate fi complexa;
+-decoratorii pot complica procesul de instantiere a componentelor;
+

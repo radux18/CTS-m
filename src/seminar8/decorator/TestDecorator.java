@@ -11,14 +11,11 @@ public class TestDecorator {
         dragon.esteLovit(200);
         dragon.seVindeca(100);
 
-    //    ACMECaracterJoc dragonCuScut = new DecoratorScut(dragon, 200);
-    //    dragonCuScut.esteLovit(300);
-
         dragon = new DecoratorScut(dragon, 200);
         dragon.esteLovit(300);
 
         dragon = new DecoratorRanit(dragon);
-        dragon.esteLovit(450);
+        dragon.esteLovit(950);
         dragon.seDeplaseaza();
 
     }

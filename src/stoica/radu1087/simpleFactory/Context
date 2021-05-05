@@ -1,0 +1,19 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Aplicatia doreste sa fidelizeze clientii activi printr-o campanie de cupoane de reducere benefice pentru eventuale achizitii de produse.
+Prin urmare exista 3 tipuri de tichete de discount : BRONZE, SILVER si GOLD.
+Pe viitor, aceasta campanie se va termina, astfel cupoanele de reducere isi vor schimba proprietatile.
+Ne dorim astfel sa eficientizam procesul de functionalitate ale acestora.
+
+Avantaje:
+-simple factory evita instantierea claselor;
+-acesta face ca structura de cod sa fie mai compacta, mai usor de extins.(De exemplu, putem
+ schimba cu usurinta implementarea claselor CuponBronze/Silver/Gold).
+
+Dezavantaje:
+-deoarece criteriile de selectie a clasei Cupon trebuie sa ia in considerare toti factorii
+care ar putea afecta procesul de selectie, implementarea unui obiect in aplicatie ar putea contine
+declaratii conditionale deloc elegante.
+-de fiecare data cand se modifica criteriile de selectie a clasei,
+fiecare obiect care mosteneste clasa de baza, trebuie sa sufere o modificare corespunzatoare.

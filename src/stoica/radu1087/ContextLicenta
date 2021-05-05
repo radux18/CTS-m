@@ -1,0 +1,21 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+In cadrul sistemului informatic se urmareste utilizarea unei aplicatii e-commerce de tranzactionare de produse de gaming. Aceasta aplicatie doreste sa impulsioneze
+utilizatorii care detin fie jocuri/tehnologii vechi, sa le poata vinde, astfel se creeaza un nou ciclu de reutilizare a produselor ce au iesit din uz,
+acestea fiind adesea lasate sa isi piarda valoarea o data cu trecerea timpului. In schimb, colectionarii sau cei pasionati de produse ce pot fi refolosite/reparate, au posibilitatea de a le gasi intrebuintare.
+Actiunile utilizatorilor sunt diverse astfel se doreste structurarea lor pe mai multe diagrame.
+Asadar, sistemul informatic cuprinde 2 tipuri de utilizatori:
+-	utilizatorul nou; cel care pentru a putea folosi mai departe aplicatia trebuie sa isi creeze un cont nou;
+-	utilizatorul inregistrat, avand un cont deja creat;
+Principalele evenimente ce doresc a fi atinse sunt:
+-	vizualizare ( produse proprii, profil, cupoane de discount, lista de produse, cos de cumparaturi, produsele proprii vandute, comenzi realizate, mesaje, recenzii);
+-	cumparare produse;
+-	adaugare (produse noi, produs in cos, adresa, cupon)
+-	plasare comanda;
+-	etc..
+Sistemul informatic pune la dispozitie utilizatorilor accesul catre crearea si respectiv vanzarea de noi produse listate. Fiecare user dev are acces pe mai multe zone din aplicatie, in functie de rolul sau(admin/manager).
+Acesta creeaza o punte de legatura intre utilizator si sistem, astfel clientii pot accesa sectiuni precum de a adauga o adresa noua. De asemenea, pentru a cumpara produse, utilizatorul trebuie sa isi adauge produsele dorite in cosul de cumparaturi , sau , daca nu este inca hotarat, el are optiunea de a le salva ca produse favorite.
+ In cazul cumparatorului, sistemul informatic ofera capacitatea de a plasa produsele spre vanzare, cu optiunea de a le modifica pe parcurs dupa bunul plac. Tototadata, cumparatorul poate insusi/folosi cupoane de reducere doar daca userul detine destule puncte.
+ Orice comanda plasata cu succes sau vanzare conduce la primirea unui anumit numar de puncte, in functie de vechimea produsului achizitionat/vandut.
+ Atat cumparatorul cat si vanzatorul au optiunea de a trimite/primi mesaje cu scopul de a ajuta interactiunea dintre ei.
+ Pentru a sustine o mai buna practica de incredere, s-a implementat o metoda de a lasa o recenzie pe profilul utilizatorului ce poate fi vizualizata ori de cate ori utilizatorii isi doresc.

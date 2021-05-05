@@ -1,0 +1,16 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Pentru a gestiona intr-un mod eficient utilizarea memoriei, utilizam acest pattern.
+Astfel, noi trebuie sa gestionam colectia de elemente din biblioticile Android care urmeaza a fi introduse din fisierul drawable si afisate in aplicati;
+Se pot incarca mai multe elemente de tipuri diferite, avand dimensiuni diferite, cat si forme;
+Prin urmare, ideal este sa avem prestabilite aceste variabile pentru a lucra mai eficient in implementarea partii de front-end a aplicatiei.
+
+Avantaje:
+-prin acest pattern se salveaza mult spatiu RAM in special daca ai multe obiecte similare;
+-salvezi mult timp;
+-cod reutilizabil;
+
+
+Dezavantaje:
+-codul poate deveni mai stufos;

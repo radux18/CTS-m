@@ -1,0 +1,15 @@
+Titlu:Aplicatie pentru dispozitive mobile -JUST4GAMERS-
+
+Descrierea problemei:
+Se doreste sa se eficientizeze modalitatea de creare a produselor de pe aceasta platforma, fara sa mai fie nevoie de
+clasica abordare costisitoare din puncte de vedere a resurselor. Astfel, se incapsuleaza logica de creare a obiectului,
+oferindu-se o flexibilitate. Produsul poate fi de 2 feluri: nou (vechimea lui fiind astfel 0) sau uzat(trebuie specificata vechimea).
+De asemenea orice produs trebuie sa contina si o imagine default pentru a putea fi instantiat.
+
+Avantaje:
+-obiectele noi create sunt "thread-safe";
+-codul poate fi mai usor de inteles;
+-poti reutiliza acelasi tipar de "code-builder" atunci cand se creeaza diferite reprezentari ale produselor.
+Dezavantaje:
+-poate genera mai mult cod
+-complexitatea generala a codului poate creste fiindca acest pattern necesita crearea mai multor clase noi.

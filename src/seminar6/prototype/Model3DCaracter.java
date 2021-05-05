@@ -31,7 +31,7 @@ public class Model3DCaracter implements Cloneable{
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException{
         // Model3DCaracter copie = new Model3DCaracter(this.culoare);
         Model3DCaracter copie = new Model3DCaracter();
         //deep-copy -> clonam obiectul fara sa mai apelam constructorul cu param
@@ -40,5 +40,14 @@ public class Model3DCaracter implements Cloneable{
         copie.puncte = (ArrayList<Integer>) this.puncte.clone();
 
         return copie;
+    }
+
+    @Override
+    public String toString() {
+        return "Model3DCaracter{" +
+                "culoare='" + culoare + '\'' +
+                ", inaltime=" + inaltime +
+                ", puncte=" + puncte +
+                '}';
     }
 }
