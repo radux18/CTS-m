@@ -3,7 +3,8 @@ package seminar5Recuperare.composite;
 import java.util.ArrayList;
 
 public class GrupCaractere extends NodAbstractStructura {
-
+    //Composite -legatura "has a" cu NodAbstractStructura
+    //colectie de alte noduri
     ArrayList<NodAbstractStructura> noduri = new ArrayList<>();
     String denumire;
 

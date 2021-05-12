@@ -2,7 +2,8 @@ package seminar8.facade;
 
 public class APIJocFacade {
     //static pentru ca nu facem modificari aici.
-    public static ProfilJucator getProfil(String ipServer, int port, String numeUtilizator, String parola){
+
+    public ProfilJucator getProfil(String ipServer, int port, String numeUtilizator, String parola){
         ServerJoc server = new ServerJoc(ipServer, port);
 
         if (server.conectare()){

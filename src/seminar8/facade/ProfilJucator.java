@@ -3,7 +3,6 @@ package seminar8.facade;
 public class ProfilJucator {
 
     public ProfilJucator(){
-
     }
 
     public String getDateProfil(){

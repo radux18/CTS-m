@@ -1,6 +1,7 @@
 package seminar5Recuperare.composite;
 
 public class CaracterNPC extends NodAbstractStructura {
+    //Nod Frunza //pt ca are metodele specifice
     String nume;
     int putere;
 

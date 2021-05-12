@@ -11,9 +11,11 @@ public class TestFacade {
             ProfilJucator profil = utilizator.getProfil();
             String dateProfil = profil.getDateProfil();
         }
-        
-        ProfilJucator profil2 = APIJocFacade.getProfil("10.0.0.1",3306, "Player 2", "123456");
-        String dateProfil2 = profil2.getDateProfil();
 
+
+        //facade
+        APIJocFacade facade = new APIJocFacade();
+        ProfilJucator profil2 = facade.getProfil("10.0.0.1",3306, "Player 2", "123456");
+        String dateProfil2 = profil2.getDateProfil();
     }
 }
