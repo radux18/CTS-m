@@ -2,7 +2,9 @@ package seminar5Recuperare.flyweight;
 
 import java.util.ArrayList;
 
+//FlyweightConcret
 public class Model3D implements InterfataModel3D {
+    //stare permanenta
     String descriere;
     ArrayList<Integer> puncteModel = new ArrayList<>();
 
@@ -18,6 +20,7 @@ public class Model3D implements InterfataModel3D {
         }
     }
 
+    //operatie(Stare stareTemporara)
     @Override
     public void afisareEcran(ContextEcran context) {
         System.out.println(String.format("Afisare %s la  %d, %d cu textura %s",

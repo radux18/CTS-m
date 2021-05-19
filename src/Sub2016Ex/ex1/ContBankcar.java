@@ -1,4 +1,4 @@
-package Sub2016Ex;
+package Sub2016Ex.ex1;
 
 public interface ContBankcar {
     //clasa care trb adaptata la bankAccount

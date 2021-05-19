@@ -1,7 +1,6 @@
 package seminar10.Chain;
 
 public abstract class HandlerChainAbstract {
-
     //ac referinta putem construi chain-ul
     //referinta la urmatorul nod/handler
     HandlerChainAbstract next = null;

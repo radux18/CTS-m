@@ -137,7 +137,6 @@ public class TestAssigment {
         System.out.println("\n");
         System.out.println("*********DECORATOR************");
         // ********  DECORATOR  ********
-
         User user = new Cumparator("Radu","radux18@yahoo.com", "farfurie123");
         user.navigheaza();
         user.trimiteMesaj();

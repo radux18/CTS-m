@@ -1,4 +1,4 @@
-package Sub2016Ex;
+package Sub2016Ex.ex1;
 
 public interface BankAccount {
     //la care trb adaptat

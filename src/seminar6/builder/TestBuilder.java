@@ -12,6 +12,7 @@ public class TestBuilder {
       //  SuperErou superErou2 =
        //         new SuperErou("Batman", 100, false, false, new Arma(), null, null,null);
 
+
         SuperErou superman = new SuperErou
                 .SuperErouBuilder("Superman",100)
                 .setArmaDreapta(new Arma())

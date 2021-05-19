@@ -2,7 +2,9 @@ package seminar5Recuperare.flyweight;
 
 import java.util.HashMap;
 
+//FactoryFlyweight
 public class FactoryModel3D {
+    //colectieFlyweight
     static HashMap<String, InterfataModel3D> modele = new HashMap<>();
 
     //eager instantiation
@@ -16,6 +18,7 @@ public class FactoryModel3D {
         }
     }
 
+    //getObiectFlyweight(cheie)
     public static InterfataModel3D getModel3D(String tip) {
         return modele.get(tip);
     }

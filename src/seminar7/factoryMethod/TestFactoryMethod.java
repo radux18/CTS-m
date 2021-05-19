@@ -14,10 +14,11 @@ public class TestFactoryMethod {
             factoryCaractere = new FactoryTemaFantasy();
         } else {
             factoryCaractere = new FactoryTemaUniversala();
+
         }
 
-        SuperErouAbstract superCaracter =
-                factoryCaractere.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
+
+        SuperErouAbstract superCaracter = factoryCaractere.getSuperErou(TipCaracter.DISNEY, "Mickey Mouse");
 
         superCaracter = factoryCaractere.getSuperErou(TipCaracter.MARVEL, "Spiderman");
         superCaracter = factoryCaractere.getSuperErou(TipCaracter.DC, "Batman");

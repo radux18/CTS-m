@@ -30,8 +30,9 @@ public class Model3DCaracter implements Cloneable{
     private Model3DCaracter(){
     }
 
+
     @Override
-    public Object clone() throws CloneNotSupportedException{
+    public Object clone() {
         // Model3DCaracter copie = new Model3DCaracter(this.culoare);
         Model3DCaracter copie = new Model3DCaracter();
         //deep-copy -> clonam obiectul fara sa mai apelam constructorul cu param

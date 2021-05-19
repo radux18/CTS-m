@@ -22,6 +22,7 @@ public class TestFacade {
 
 		//facade
 		ApartamentFacade apartament = new ApartamentFacade(new Fereastra(), new RobinetApa(), new UsaLocuinta(), new MasinaSpalat());
+
 		apartament.inchideCasa();
 		//mai tarziu ...
 		apartament.pornesteMasinaSpalat();

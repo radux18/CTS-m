@@ -4,9 +4,9 @@ public class SuperErou {
 
     private String nume;
     private int puncteViata;
-
     private boolean esteNegativ;
     private  boolean esteRanitGrav;
+
 
     private  InterfataArma armaDreapta;
     private  InterfataArma armaStanga;
@@ -27,15 +27,17 @@ public class SuperErou {
         this.superSuperPutere = superSuperPutere;
     }
 
-
+    //clasa builder care adauga componente
     public static class SuperErouBuilder {
        SuperErou superErou;
 
+       //constructorul
        public SuperErouBuilder(String nume, int puncteViata){
            this.superErou = new SuperErou();
            this.superErou.nume = nume;
            this.superErou.puncteViata = puncteViata;
        }
+
 
        public SuperErouBuilder esteNegativ(){
            this.superErou.esteNegativ = true;
@@ -67,6 +69,7 @@ public class SuperErou {
            this.superErou.superSuperPutere = superSuperPutere;
            return this;
        }
+
 
        //builderul creaza obiectul dorit
        public SuperErou build(){

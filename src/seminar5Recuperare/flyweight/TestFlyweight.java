@@ -2,6 +2,7 @@ package seminar5Recuperare.flyweight;
 
 public class TestFlyweight {
     public static void main(String[] args) {
+
         ContextEcran contextCladire1 = new ContextEcran(100, 50, "Albastru");
         ContextEcran contextCladire2 = new ContextEcran(200, 100, "Albastru");
         ContextEcran contextCladire3 = new ContextEcran(200, 350, "Rosu");

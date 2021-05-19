@@ -1,4 +1,4 @@
-package Sub2016Ex;
+package Sub2016Ex.ex1;
 
 public class TestAdapter {
     public static void main(String[] args) {

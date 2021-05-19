@@ -1,6 +1,6 @@
-package Sub2016Ex;
+package Sub2016Ex.ex2;
 
-public class ContBancarDebit implements ContBankcar{
+public class ContBancarDebit implements InterfataContBancar {
 
     double balanta;
     String IBAN;
@@ -11,8 +11,8 @@ public class ContBancarDebit implements ContBankcar{
     }
 
     @Override
-    public void transfer(ContBankcar destinatie, double suma) {
-        destinatie.depune(suma);
+    public void transfer(InterfataContBancar cont, double suma) {
+        cont.depune(suma);
         this.balanta -= suma;
     }
 
