@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class StudentTest {
-
     //Test fixture
     //creem o referinta pentru a o putea apela in teste
    static Student student;
@@ -27,7 +26,6 @@ public class StudentTest {
         note.add(10);
         note.add(8);
         //se executa o sg data inainte de toate unit testele
-        //ex. conexiune la bd
     }
 
     @AfterClass
@@ -105,7 +103,7 @@ public class StudentTest {
         assertEquals("Test cu note sortate crescator", notaMinima, notaDeterminata);
     }
 
-    @Test
+    @Test // setezi un array gol in student
     public void testGetNotaMinimaCardinalityZero() throws ExceptieNota {
         ArrayList<Integer> note = new ArrayList<>();
         student.setNote(note);
@@ -116,7 +114,7 @@ public class StudentTest {
         assertEquals("Test fara note", notaMinima, notaMinimaCalculata);
     }
 
-    @Test
+    @Test  //adaugi si setezi un sg elem
     public void testGetNotaMinimaCardinalityUnu() throws ExceptieNota {
         ArrayList<Integer> note = new ArrayList<>();
         note.add(Student.MAX_NOTA);
@@ -128,6 +126,7 @@ public class StudentTest {
         assertEquals("Test cu o singura nota", notaMinima, notaMinimaCalculata);
     }
 
+    //testam functia cu null
     @Test
     public void testGetNotaMinimaExistenceReferintaNull() throws ExceptieNota {
         student.setNote(null);

@@ -31,7 +31,6 @@ public class Student {
         return nume;
     }
 
-
     public void setNume(String nume) throws ExceptieNume {
         this.nume = nume;
     }
@@ -41,16 +40,15 @@ public class Student {
     }
 
     public void setVarsta(int varsta) throws ExceptieVarsta {
-        if (varsta < Student.MIN_VARSTA || varsta >= Student.MAX_VARSTA){
+        if (varsta < Student.MIN_VARSTA || varsta > Student.MAX_VARSTA){
             throw new ExceptieVarsta();
         }
         this.varsta = varsta;
     }
 
     public void setNote(ArrayList<Integer> note) throws ExceptieNota {
-        this.note = note;
+        this.note = (ArrayList<Integer>) note.clone();
     }
-
 
     public int getNota(int index) {
         return this.note.get(index);
@@ -59,7 +57,6 @@ public class Student {
     public int getNrNote() {
         return this.note.size();
     }
-
 
     public float getMedie() {
         int sum = 0;

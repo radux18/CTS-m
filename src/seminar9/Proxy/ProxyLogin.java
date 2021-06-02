@@ -10,7 +10,6 @@ public class ProxyLogin implements InterfataModulLogin {
     public static final int NR_MAX_INCERCARI = 3;
     public Map<String, Integer> nrIncercari = new HashMap<>();
 
-
     public ProxyLogin(InterfataModulLogin modulLogin) {
         this.modulLogin = modulLogin;
     }
@@ -35,6 +34,7 @@ public class ProxyLogin implements InterfataModulLogin {
                 } else {
                     nrIncercariNereusite += 1;
                     nrIncercari.put(username, nrIncercariNereusite);
+
                     return false;
                 }
             } else {
